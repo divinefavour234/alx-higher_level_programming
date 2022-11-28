@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Compiling main.py ..."
+python3 $PYFILE >> $PYFILEc
+
