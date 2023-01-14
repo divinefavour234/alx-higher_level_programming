@@ -1,2 +1,9 @@
 #!/usr/bin/python3
-print("{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}".format(*[(chr(i) if i % 2 == 0 else chr(i-32)) for i in range(122, 96, -1)][::-1]), end="")
+alternate = False
+diff = ord('A') - ord('a')
+for n in range(ord('z'), ord('a') - 1, -1):
+    if alternate:
+        n += diff
+    alternate = not alternate
+    c = chr(n)
+    print("{}".format(c), end='')
