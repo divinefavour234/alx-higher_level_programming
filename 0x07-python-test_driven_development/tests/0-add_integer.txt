@@ -1,4 +1,4 @@
-add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
 >>> #Test to Add two integers
 
@@ -12,7 +12,7 @@ add_integer = __import__('0-add_integer').add_integer
 8
 
 >>> add_integer(7.3, 2.7)
-10
+9
 
 >>> add_integer(5, "Error")
 Traceback (most recent call last):
@@ -22,6 +22,6 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer(most recent call last):
+>>> add_integer("Error")
 Traceback (most recent call last):
 TypeError: a must be an integer
